@@ -1,0 +1,6 @@
+mdhcp6
+======
+
+A small dhcpv6 client for unix-like systems. Approx 15Kb with support for 
+statefull dhcpv6. The client has been run on linux-2.4, linux-2.6 and 
+OpenBSD 3.7. On BSD it does not autosense the RA state of an interface.

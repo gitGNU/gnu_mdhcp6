@@ -28,21 +28,21 @@ CFLAGS = @CFLAGS@ -UNDEBUG
 INCLUDES = @CHECK_CFLAGS@
 
 if HAVE_CHECK
-MDHCP6_SOURCES    = ../src/mdhcp6.c ../src/mdhcp6.h
-LEASE_SOURCES     = ../src/lease.c ../src/lease.h
-OMAP_SOURCES      = ../src/optionmap.c ../src/optionmap.h
-MSGBUF_SOURCES    = ../src/msgbuf.c ../src/msgbuf.h
-RANDOM_SOURCES    = ../src/random.c ../src/random.h
-PTIME_SOURCES     = ../src/ptime.c ../src/ptime.h
-DHCPV6_SOURCES    = dhcpv6_instr.c ../src/dhcpv6.h
-#IF_SOURCES        = ../src/if.c ../src/if.h
+MDHCP6_SOURCES    = $(top_srcdir)/src/mdhcp6.c $(top_srcdir)/src/mdhcp6.h
+LEASE_SOURCES     = $(top_srcdir)/src/lease.c $(top_srcdir)/src/lease.h
+OMAP_SOURCES      = $(top_srcdir)/src/optionmap.c $(top_srcdir)/src/optionmap.h
+MSGBUF_SOURCES    = $(top_srcdir)/src/msgbuf.c $(top_srcdir)/src/msgbuf.h
+RANDOM_SOURCES    = $(top_srcdir)/src/random.c $(top_srcdir)/src/random.h
+PTIME_SOURCES     = $(top_srcdir)/src/ptime.c $(top_srcdir)/src/ptime.h
+DHCPV6_SOURCES    = dhcpv6_instr.c $(top_srcdir)/src/dhcpv6.h
+#IF_SOURCES        = $(top_srcdir)/src/if.c $(top_srcdir)/src/if.h
 IF_INSTR_SOURCES  = if_instr.c if.h
 NOTIFY_INSTR_SOURCES  = notify_instr.c notify.h
-NETLINK_SOURCES   = ../src/netlink.c ../src/netlink.h
-NET_INSTR_SOURCES = net_instr.c ../src/net.h
+NETLINK_SOURCES   = $(top_srcdir)/src/netlink.c $(top_srcdir)/src/netlink.h
+NET_INSTR_SOURCES = net_instr.c $(top_srcdir)/src/net.h
 
 # we need access to the actual code in src
-INCLUDES += -I. -I../src/
+INCLUDES += -I. -I$(top_srcdir)/src/
 
 # tests to run
 TESTS  = check_mdhcp6
