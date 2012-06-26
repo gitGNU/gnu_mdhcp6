@@ -1,0 +1,13 @@
+Makefile
+Makefile.in
+.deps
+check_msgbuf
+check_lease
+check_dhcpv6
+check_mdhcp6
+*.bb
+*.bbg
+*.gcov
+*.da
+*.gcda
+*.gcno

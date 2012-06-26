@@ -1,0 +1,17 @@
+mdhcp6 -- History of visible changes.
+
+See the file COPYING for copying conditions.
+
+Please send mdhcp6 bug reports to edgar.iglesias@axis.com.
+
+Version 0.1
+
+* Stateless DHCPv6 (INFO-REQUESTS)
+* DNS SERVERS option.
+* DOMAIN LIST option.
+* NTP SERVERS option.
+* SIP SERVERS option.
+* SIP DOMAINS option.
+* TIMEZONE option.
+
+-------------------------------------------------------

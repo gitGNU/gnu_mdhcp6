@@ -1,0 +1,7 @@
+Makefile
+Makefile.in
+.deps
+config.h
+mdhcp6
+stamp-h1
+
