@@ -22,6 +22,9 @@
  * Authors:	     Edgar E. Iglesias <edgar@axis.com>
  */
 
+#define __GNU_SOURCE
+#define __USE_GNU
+
 #ifdef HAVE_CONFIG_H
 #include "config.h"
 #endif
@@ -35,8 +38,6 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-#define __GNU_SOURCE
-#define __USE_GNU
 #include <string.h>
 #include <errno.h>
 #include <unistd.h>
