@@ -29,10 +29,6 @@ AM_INIT_AUTOMAKE([dist-bzip2])
 
 AC_PROG_CC
 
-if test "$GCC" = "yes" || test "$GCC" = "egcs"; then 
-        CFLAGS="$CFLAGS -Wall -pedantic -Os -DNDEBUG"
-fi
-
 AC_ARG_VAR(CC_FOR_BUILD,[build system C compiler])
 # Check for environment variable CC_FOR_BUILD before overwriting it
 if test -z "$CC_FOR_BUILD"; then
